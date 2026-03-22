@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VNF TV</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Background Video */
+    video.bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 25px 20px;
+    }
+
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .verified {
+      color: #1da1f2;
+      margin-left: 5px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      color: white;
+      text-decoration: none;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .link:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 15px rgba(255, 75, 43, 0.7);
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons i {
+      margin: 0 8px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .social-icons i:hover {
+      transform: scale(1.3);
+      color: #ff4b2b;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Video (change link if needed) -->
+ <video autoplay muted loop class="bg-video">
+  <source src="bg.mp4" type="video/mp4">
+</video>
+
+  <div class="container">
+
+    <img src="logo.png" class="profile-pic">
+    
+    <div class="logo">
+      🔥 Viral News Facts TV <i class="fa-solid fa-circle-check verified"></i>
+    </div>
+
+    <div class="subtitle">Daily Viral News | Trending Updates | Breaking Stories</div>
+
+    <a class="link" href="https://www.instagram.com/viral_news_facts_tv" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a class="link" href="https://www.threads.com/@viral_news_facts_tv" target="_blank">
+      <i class="fa-brands fa-threads"></i> Threads
+    </a>
+
+    <a class="link" href="https://www.facebook.com/share/18CKwpzCW6/" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+
+    <a class="link" href="https://whatsapp.com/channel/0029Vb7gcoI9hXF5nzRwdB0g" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp Channel
+    </a>
+
+    <a class="link" href="https://youtube.com/@viralnewsfactstv" target="_blank">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+
+    <!-- Social Icons Row -->
+    <div class="social-icons">
+      <i class="fab fa-instagram"></i>
+      <i class="fa-brands fa-threads"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+
+    <div class="footer">⚡ Powered by Viral News Facts TV</div>
+
+  </div>
+
+</body>
+</html>
